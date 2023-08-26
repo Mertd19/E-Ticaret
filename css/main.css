@@ -1,13 +1,15 @@
 /* Config File */
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-html{
+
+html {
     font-size: 10px;
 }
-body{
+
+body {
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     font-size: 1.4rem;
@@ -15,14 +17,19 @@ body{
 }
 
 /* Main */
-main{
+main {
     margin-top: 5rem;
 }
-main .card-body .card-text::first-letter{
+
+main .card-body .card-text::first-letter {
     text-transform: uppercase;
 }
 
 /* Footer */
-footer{
+footer {
     margin-bottom: 5rem;
+}
+
+footer h3 {
+    color: #fdfcfa;
 }
