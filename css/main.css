@@ -1,6 +1,6 @@
 /* Config File */
 *{
-    box-sizing: border-box!important;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -12,4 +12,17 @@ body{
     position: relative;
     font-size: 1.4rem;
     min-height: 120rem;
+}
+
+/* Main */
+main{
+    margin-top: 5rem;
+}
+main .card-body .card-text::first-letter{
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer{
+    margin-bottom: 5rem;
 }
