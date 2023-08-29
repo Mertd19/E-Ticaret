@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siparişler</title>
+    <title>Cupons</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,11 +92,11 @@
                             Bilgiler</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a href="#" class="dropdown-item"><span class="fa fa-user-circle-o"></span>Profilim</a>
-                            <a href="cupons.html" class="dropdown-item"><span class="fa fa-file-text"></span> Kuponlarım</a>
+                            <a href="#" class="dropdown-item"><span class="fa fa-file-text"></span> Kuponlarım</a>
                             <a href="message.html" class="dropdown-item"><span class="fa fa-comment"></span> Mesaj <span
                                     class="badge badge-primary pt-2">2</span></a>
-                            <a href="#" class="dropdown-item"><span class="fa fa-barcode"></span>
-                                Siparişlerim</a>
+                            <a href="siparislerim.html" class="dropdown-item"><span class="fa fa-barcode"></span>
+                                Şiparişlerim</a>
                             <a href="address.html" class="dropdown-item"><span class="fa fa-map"></span> Adreslerim</a>
                             <a href="" class="dropdown-item text-danger"><span class="fa fa-sign-out"></span> Çıkış</a>
                         </div>
@@ -111,7 +111,7 @@
         <!-- Breadcrumb Start -->
         <nav class="breadcrumb mt-5">
             <a class="breadcrumb-item mt-3" href="index.html"> Anasayfa</a>
-            <a class="breadcrumb-item mt-3" href="#"> Siparişlerim</a>
+            <a class="breadcrumb-item mt-3" href="#"> Kuponlarım</a>
             <span class="breadcrumb-item active mt-3"> Detay</span>
         </nav>
         <!-- Breadcrumb End -->
@@ -123,61 +123,27 @@
                         <table class="table table-sm table-striped hover text-center table-dark">
                             <thead>
                                 <tr>
-                                    <th>Sipariş Numarası</th>
-                                    <th>Sipariş Durumu</th>
-                                    <th>Sipariş Firma</th>
-                                    <th>Sipariş Adres</th>
-                                    <th>Sipariş Tarih</th>
-                                    <th>Sipariş Fiyat</th>
+                                    <th>Kupon Adı</th>
+                                    <th>Son Kullanma Tarih</th>
                                     <th>İşlemler</th>
                                 </tr>
                             </thead>
                             <tbody style="font-size: 1.2rem;">
                                 <tr>
-                                    <td class="p-2">Sipariş 1</td>
-                                    <td class="p-2">Hazırlanıyor</td>
-                                    <td class="p-2">Firma 1</td>
-                                    <td class="p-2">Ev</td>
-                                    <td class="p-2">27 Ağustos 2023</td>
-                                    <td class="p-2">650 TL</td>
+                                    <td class="p-2">Kupon 1</td>
+                                    <td class="p-2">7 Eylül 2023</td>
                                     <td>
-                                        <button class="btn btn-primary siparislerimCompany"><i
-                                                class="fa fa-building-o"></i></button>
-                                        <button class="btn btn-primary siparislerimEdit"><i
-                                                class="fa fa-pencil-square-o"></i></button>
-                                        <button class="btn btn-danger siparislerimTrash"><i
+                                        <button class="btn btn-primary cuponsWiew"><i class="fa fa-eye"></i></button>
+                                        <button class="btn btn-danger cuponsTrash"><i
                                                 class="fa fa-trash-o"></i></button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="p-2">Sipariş 2</td>
-                                    <td class="p-2">Teslim Edildi</td>
-                                    <td class="p-2">Firma 2</td>
-                                    <td class="p-2">Ev</td>
-                                    <td class="p-2">10 Mart 2023</td>
-                                    <td class="p-2">1850 TL</td>
+                                    <td class="p-2">Kupon 2</td>
+                                    <td class="p-2">31 Ağustos 2023</td>
                                     <td>
-                                        <button class="btn btn-primary siparislerimCompany"><i
-                                                class="fa fa-building-o"></i></button>
-                                        <button class="btn btn-primary siparislerimEdit"><i
-                                                class="fa fa-pencil-square-o"></i></button>
-                                        <button class="btn btn-danger siparislerimTrash"><i
-                                                class="fa fa-trash-o"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">Sipariş 3</td>
-                                    <td class="p-2">Teslim Edildi</td>
-                                    <td class="p-2">Firma 5</td>
-                                    <td class="p-2">Ev</td>
-                                    <td class="p-2">8 Mart 2023</td>
-                                    <td class="p-2">5500 TL</td>
-                                    <td>
-                                        <button class="btn btn-primary siparislerimCompany"><i
-                                                class="fa fa-building-o"></i></button>
-                                        <button class="btn btn-primary siparislerimEdit"><i
-                                                class="fa fa-pencil-square-o"></i></button>
-                                        <button class="btn btn-danger siparislerimTrash"><i
+                                        <button class="btn btn-primary cuponsWiew"><i class="fa fa-eye"></i></button>
+                                        <button class="btn btn-danger cuponsTrash"><i
                                                 class="fa fa-trash-o"></i></button>
                                     </td>
                                 </tr>
@@ -297,100 +263,8 @@
         </div>
     </footer>
     <!-- Footer End -->
-    <!-- Üye Girişi Modal Start  -->
-    <div class="modal fade" id="myUye" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Üye Girişi</h5>
-                    <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" id="usernameGiris" name="usernameGiris" class="form-control"
-                                    placeholder="Kullanıcı adınızı giriniz." required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" id="passwordGiris" name="passwordGiris" class="form-control"
-                                    placeholder="Şifrenizi giriniz." required>
-                            </div>
-                            <div class="checkbox">
-                                <label for=""><input type="checkbox">Beni Hatırla</label>
-                                <a href="" class="float-right" id="rememberPassword"><span class="fa fa-key"></span>
-                                    Şifremi unuttum</a>
-                            </div>
-                            <div class="row">
-                                <button type="reset" class="btn btn-danger col-6 float-left">Temizle</button>
-                                <button id="girisBtn" class="btn btn-primary col-6 float-right">Giriş</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" id="kapatBtn" class="btn btn-danger" data-dismiss="modal">Kapat</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Üye Girişi Modal End -->
-    <!-- Kayıt Ol Modal Start  -->
-    <div class="modal fade" id="myUyeKayit" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Kayıt Ol</h5>
-                    <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <form>
-                            <div class="form-group">
-                                <label for="username">Kullanıcı adı</label>
-                                <input type="text" id="username" name="username" class="form-control"
-                                    placeholder="Kullanıcı adınızı giriniz." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="adsoyad">Kullanıcı adı soyadı</label>
-                                <input type="text" id="adi" name="adi" class="form-control"
-                                    placeholder="Adınızı Soyadınızı giriniz." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="Email adresinizi giriniz." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Şifre</label>
-                                <input type="password" id="password" name="password" class="form-control"
-                                    placeholder="Şifrenizi giriniz." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="tel">Telefon numarası</label>
-                                <input type="tel" id="phone" name="phone" class="form-control"
-                                    placeholder="Telefon numaranızı giriniz." required>
-                            </div>
-                            <div class="row">
-                                <button type="reset" class="btn btn-danger col-6 float-left">Temizle</button>
-                                <button type="submit" class="btn btn-primary col-6 float-right">Kayıt Ol</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Kayıt Ol Modal End -->
     <!-- Sepet Modal Start -->
-    <div class="modal fade" id="mySepet" role="dialog">
+    <div class="modal fade" id="mySepet" role="dialog" tabindex="1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -440,28 +314,32 @@
         </div>
     </div>
     <!-- Sepet Modal End -->
-    <!-- Siparis Company Modal Start -->
-    <div class="modal fade" id="CompanyModal" role="dialog">
+    <!-- Cupons Wiew Modal Start -->
+    <div class="modal fade" id="cuponsWiewModal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Company Modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Modal</h5>
+                    <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="http://placehold.it/80x80" class="rounded-circle img-fluid" alt="Resim Yok">
-                            </div>
-                            <div class="col-md-8">
-                                <h3>Firma Bilgileri</h3>
-                                <ul>
-                                    <li class="list-group">Firma Adı</li>
-                                    <li class="list-group">Firma Adres</li>
-                                </ul>
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="kuponNo">Kupon Adı</label>
+                                        <input type="text" id="numara" name="numara" class="form-control w-100"
+                                            placeholder="Kupoan adı" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="kuponTarih">Kupon son kullanma tarihi</label>
+                                        <input type="text" id="tarih" name="tarih" class="form-control w-100"
+                                            placeholder="Kupon tarih" disabled>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -472,28 +350,9 @@
             </div>
         </div>
     </div>
-    <!-- Siparis Company Modal End -->
-    <!-- Siparis Edit Modal Start -->
-    <div class="modal fade" id="EditModal" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Siparis Edit Modal End -->
-    <!-- Trash Modal Start -->
-    <div class="modal fade" id="TrashModal" role="dialog">
+    <!-- Cupons Wiew Modal End -->
+    <!-- Cupons Trash Modal Start -->
+    <div class="modal fade" id="cuponsTrashModal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -528,7 +387,7 @@
             </div>
         </div>
     </div>
-    <!-- Siparis Trash Modal End -->
+    <!-- Cupons Wiew Modal End -->
     <!-- ########### -->
     <script>
         $(document).ready(function () {
@@ -553,15 +412,11 @@
             $("#mySepetAll").click(function () {
                 $("#mySepet").modal();
             });
-            $(".siparislerimCompany").click(function () {
-                // var rowindex2 = $(this).parent().parent().index('tr');
-                $("#CompanyModal").modal();
+            $(".cuponsWiew").click(function () {
+                $("#cuponsWiewModal").modal();
             });
-            $(".siparislerimEdit").click(function () {
-                $("#EditModal").modal();
-            });
-            $(".siparislerimTrash").click(function () {
-                $("#TrashModal").modal();
+            $(".cuponsTrash").click(function () {
+                $("#cuponsTrashModal").modal();
             });
         });
     </script>
